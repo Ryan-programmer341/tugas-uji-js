@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id = "inputNama">
+        <button type="button" onclick="ambilNama()">Tombol</button>
+    </form>
+    <h1>namaku adalah,<div id="namaLengkap"></div></h1>
+    <script>
+        function ambilNama(){
+            var nama; 
+            nama = document.getElementById("inputNama").value;
+            console.log(nama);
+            
+            document.getElementById("namaLengkap").innerHTML = nama;
+            
+        }
+    </script>
+</body>
+</html>

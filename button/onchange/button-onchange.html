@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputan" onchange="tampilkanNilai()">
+    <p id="main"></p>
+
+<script>
+    function tampilkanNilai() {
+        let nilai = document.getElementById("inputan").value;
+        document.getElementById("main").innerText = "Kamu menulis: " + nilai;
+    }
+
+</script>
+
+<!--catatan:onchange tidak cocok digunakan <button>
+ karena onchange digunakan untuk <input>,<textarea>,<select> --->
+
+</body>
+</html>
